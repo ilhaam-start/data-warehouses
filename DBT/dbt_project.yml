@@ -1,0 +1,4 @@
+config-version: 2
+version: '1.0.0'
+name: 'maker_warehouse'
+profile: 'maker_warehouse'
