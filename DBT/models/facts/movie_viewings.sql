@@ -7,4 +7,4 @@ SELECT
     duration,
     user_id,
     movie_id
-FROM {{ source('raw', 'raw_netflix')}}
+FROM {{ source("raw", "raw_netflix")}}

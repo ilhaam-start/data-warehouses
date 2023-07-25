@@ -9,3 +9,12 @@ sources:
     schema: public
     tables:
       - name: raw_netflix
+  
+  - name: raw
+    quoting:
+      database: false
+      schema: false
+      identifier: false
+    schema: public
+    tables:
+      - name: raw_banking

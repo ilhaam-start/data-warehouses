@@ -1,0 +1,43 @@
+version: 2
+
+models:
+- name: movie_viewings
+  columns:
+    - name: movie_id
+      tests:
+        - not_null
+
+- name: movies
+  unique_key: [movie_id]
+
+- name: users
+  columns: 
+    - name: user_id
+      tests:
+        - not_null
+
+- name: genres
+  columns: 
+    - name: genres
+      tests:
+        - not_null
+
+- name: sum_movie_views
+  materialized: table
+  tests:
+    - has_rows
+    
+- name: sum_movie_viewing_time
+  materialized: table
+  tests:
+    - not_empty
+
+- name: sum_user_activity
+  materialized: table
+  tests:
+    - not_empty
+
+- name: sum_genre_views
+  materialized: table
+  tests:
+    - not_empty
