@@ -8,6 +8,5 @@ SELECT
 	creditscore,
 	balance,
 	exited,
-	complain,
-	total_balance
+	complain
 FROM {{ source("raw", "raw_banking") }}
